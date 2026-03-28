@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '../../utils/supabase/client';
 
@@ -56,6 +56,32 @@ export default function DashboardPage() {
   const router = useRouter();
   const [activeLesson, setActiveLesson] = useState(courseModules[0].lessons[0]);
   const [expandedModules, setExpandedModules] = useState<number[]>([1]);
+  
+  // NUEVO: Estados para guardar los datos del usuario
+  const [userName, setUserName] = useState('Alumno');
+  const [userInitials, setUserInitials] = useState('AL');
+
+  // NUEVO: Efecto para buscar al usuario al cargar la página
+  useEffect(() => {
+    async function getUserData() {
+      const supabase = createClient();
+      const { data: { user } } = await supabase.auth.getUser();
+
+      if (user && user.email) {
+        // Tomamos la parte antes del @ (ej. roberto.carlos de roberto.carlos@gmail.com)
+        const emailName = user.email.split('@')[0];
+        
+        // Limpiamos el nombre (quitamos puntos o guiones y ponemos mayúscula inicial)
+        const cleanName = emailName.replace(/[\.\-\_]/g, ' ');
+        const formattedName = cleanName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        
+        setUserName(formattedName);
+        setUserInitials(formattedName.substring(0, 2).toUpperCase());
+      }
+    }
+    
+    getUserData();
+  }, []);
 
   const toggleModule = (moduleId: number) => {
     if (expandedModules.includes(moduleId)) {
@@ -81,10 +107,12 @@ export default function DashboardPage() {
         </div>
         <div className="flex items-center gap-4">
           <div className="hidden md:flex items-center gap-2 text-sm text-slate-400">
+            {/* NUEVO: Iniciales dinámicas */}
             <div className="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center font-bold border border-emerald-500/30">
-              AL
+              {userInitials}
             </div>
-            <span>Alan Felipe</span>
+            {/* NUEVO: Nombre dinámico */}
+            <span className="font-medium text-slate-200">{userName}</span>
           </div>
           <button 
             onClick={handleLogout}
