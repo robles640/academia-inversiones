@@ -67,7 +67,7 @@ export default function LoginPage() {
               <span className="text-2xl font-black tracking-tighter text-white uppercase whitespace-nowrap">Elart</span>
               <span className="text-2xl font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 whitespace-nowrap">Inversiones</span>
             </div>
-            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-slate-500 transform -skew-x-12 origin-center mt-1">Portal Alumnos</span>
+            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-slate-500 transform -skew-x-12 origin-center mt-1">Portal Matriculados</span>
           </div>
         </div>
 

@@ -12,6 +12,10 @@ const courseModules = [
     id: 0,
     title: 'MÓDULO 0 — INTRODUCCIÓN SEGÚN TU PAÍS',
     lessons: [
+      { id: 991, title: 'Lección Preliminar 1', duration: '10:00', description: 'Define tu camino inicial y elige las herramientas adecuadas.', videoUrl: '/video1.mp4', thumbnailUrl: '/imagen46.png' },
+      { id: 992, title: 'Lección Preliminar 2', duration: '12:30', description: 'Registro y Uso de Hapi y plan de acción inicial para usar el broker.', videoUrl: '/video2.mp4', thumbnailUrl: '/imagen47.png' },
+      { id: 993, title: 'Lección Preliminar 3', duration: '15:20', description: 'Uso y configuración de XTB para invertir y superar restricciones locales.', videoUrl: '/video3.mp4', thumbnailUrl: '/imagen48.png' },
+
       { id: 1, title: 'Lección 0: Ruta estratégica según tu país de residencia', duration: '10:00', description: 'Define tu camino inicial y elige las herramientas adecuadas.', videoUrl: 'https://www.youtube.com/embed/OD5Gz6_x4sA?rel=0&modestbranding=1', thumbnailUrl: '/imagen1.png' },
       { id: 2, title: 'Lección 0.1: Broker XTB (Recomendado para LATAM y Europa)', duration: '12:30', description: 'Configuración de XTB y plan de acción inicial.', videoUrl: 'https://www.youtube.com/embed/fAVVsmOXjEQ?rel=0&modestbranding=1', thumbnailUrl: '/imagen2.png' },
       { id: 3, title: 'Lección 0.2: Broker Admirals (Depósitos con criptomonedas)', duration: '15:20', description: 'Uso de Admirals para superar restricciones locales.', videoUrl: 'https://www.youtube.com/embed/mKJXT9U8BBM?rel=0&modestbranding=1', thumbnailUrl: '/imagen3.png' },
@@ -455,12 +459,13 @@ export default function DashboardPage() {
         {/* ZONA DE VIDEO Y DETALLES */}
         <section className="lg:col-span-9 flex flex-col gap-4">
           
-          {/* 🟢 REPRODUCTOR PROFESIONAL CON MEMORIA Y MINIATURA */}
+          
+          {/* // --- BLOQUE GUARDADO: REPRODUCTOR ORIGINAL (SOLO YOUTUBE) ---
           <div className="w-full aspect-video bg-black rounded-2xl border border-slate-800 relative overflow-hidden shadow-2xl ring-1 ring-slate-800/50">
             {activeLesson.videoUrl ? (
               !isVideoPlaying ? (
                 
-                /* ESTADO 1: MINIATURA (FACADE) - 100% NÍTIDA */
+                // ESTADO 1: MINIATURA (FACADE) - 100% NÍTIDA
                 <div 
                   className="absolute inset-0 w-full h-full cursor-pointer group flex items-center justify-center bg-black"
                   onClick={() => setIsVideoPlaying(true)}
@@ -468,11 +473,10 @@ export default function DashboardPage() {
                   <img 
                     src={(activeLesson as any).thumbnailUrl || '/imagen.png'} 
                     alt={activeLesson.title}
-                    // 🟢 Se quitó opacity-50 y group-hover:opacity-40. Se añadió un sutil oscurecimiento solo al pasar el mouse para indicar que es clickeable.
                     className="absolute inset-0 w-full h-full object-cover group-hover:brightness-90 transition-all duration-300"
                   />
                   
-                  {/* Botón de Play Flotante */}
+                  // Botón de Play Flotante
                   <div className="relative z-10 w-20 h-20 bg-emerald-500/90 rounded-full flex items-center justify-center backdrop-blur-md shadow-[0_0_40px_rgba(16,185,129,0.5)] group-hover:scale-110 transition-transform duration-300 border border-emerald-400/50">
                      <svg className="w-8 h-8 text-slate-950 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                   </div>
@@ -481,7 +485,7 @@ export default function DashboardPage() {
                     Haz clic para reproducir
                   </div>
                   
-                  {/* 🟢 INDICADOR DE PROGRESO GUARDADO */}
+                  // 🟢 INDICADOR DE PROGRESO GUARDADO
                   {savedTimes[activeLesson.id] > 5 && (
                     <div className="absolute top-6 left-6 text-emerald-400 text-xs font-bold uppercase tracking-widest bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20 backdrop-blur-sm shadow-lg">
                       Se reanudará tu progreso guardado
@@ -489,11 +493,56 @@ export default function DashboardPage() {
                   )}
                 </div>
               ) : (
-                /* ESTADO 2: REPRODUCTOR INTELIGENTE DE YOUTUBE */
+                // ESTADO 2: REPRODUCTOR INTELIGENTE DE YOUTUBE
                 <div 
                   id={`yt-player-${activeLesson.id}`} 
                   className="absolute top-0 left-0 w-full h-full border-0"
                 ></div>
+              )
+            ) : (
+              // ESTADO 3: SIN VIDEO
+              <div className="flex flex-col items-center justify-center w-full h-full bg-slate-900">
+                <div className="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mb-4">
+                  <svg className="w-8 h-8 text-slate-600" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+                <p className="text-slate-500 font-mono text-sm uppercase tracking-widest">Video en preparación</p>
+              </div>
+            )}
+          </div>
+          */}
+
+          {/* 🟢 REPRODUCTOR HÍBRIDO (YOUTUBE + MP4 NORMA TEMPORALL) */}
+          <div className="w-full aspect-video bg-black rounded-2xl border border-slate-800 relative overflow-hidden shadow-2xl ring-1 ring-slate-800/50">
+            {activeLesson.videoUrl ? (
+              !isVideoPlaying ? (
+                /* ESTADO 1: MINIATURA 100% NÍTIDA */
+                <div 
+                  className="absolute inset-0 w-full h-full cursor-pointer group flex items-center justify-center bg-black"
+                  onClick={() => setIsVideoPlaying(true)}
+                >
+                  <img 
+                    src={(activeLesson as any).thumbnailUrl || '/imagen.png'} 
+                    alt={activeLesson.title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:brightness-90 transition-all duration-300"
+                  />
+                  
+                  <div className="relative z-10 w-20 h-20 bg-emerald-500/90 rounded-full flex items-center justify-center backdrop-blur-md shadow-[0_0_40px_rgba(16,185,129,0.5)] group-hover:scale-110 transition-transform duration-300 border border-emerald-400/50">
+                     <svg className="w-8 h-8 text-slate-950 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                  
+                  <div className="absolute bottom-6 text-slate-400 text-xs font-mono tracking-widest uppercase bg-slate-950/80 px-5 py-2.5 rounded-lg backdrop-blur-md border border-slate-800 z-10 group-hover:border-emerald-500/30 transition-colors">
+                    Haz clic para reproducir
+                  </div>
+                </div>
+              ) : (
+                /* ESTADO 2: REPRODUCTOR INTELIGENTE */
+                activeLesson.videoUrl.includes('youtube.com') ? (
+                  // Si es YouTube, usa el reproductor pro
+                  <div id={`yt-player-${activeLesson.id}`} className="absolute top-0 left-0 w-full h-full border-0"></div>
+                ) : (
+                  // Si NO es YouTube (tus MP4 locales), usa un reproductor normal
+                  <video src={activeLesson.videoUrl} controls autoPlay className="absolute top-0 left-0 w-full h-full object-contain bg-black"></video>
+                )
               )
             ) : (
               /* ESTADO 3: SIN VIDEO */
@@ -505,7 +554,7 @@ export default function DashboardPage() {
               </div>
             )}
           </div>
-
+          
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 mt-2 shadow-2xl">
             <div className="flex items-center gap-3 mb-4">
                <span className="px-3 py-1 text-[10px] font-black uppercase tracking-widest bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">
