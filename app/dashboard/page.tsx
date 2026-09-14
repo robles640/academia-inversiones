@@ -31,7 +31,7 @@ const courseModules = [
     title: 'MÓDULO 1 — BASES DE LA BOLSA',
     lessons: [
       { id: 9, title: 'Lección 1: Vocabulario esencial de Bolsa', duration: '10:15', description: 'Conceptos clave antes de empezar.', videoUrl: 'https://www.youtube.com/embed/u48Vn2pRNjg?rel=0&modestbranding=1', thumbnailUrl: '/imagen9.png' },
-      { id: 10, title: 'Lección 2: ¿Cómo se gana dinero realmente?', duration: '12:40', description: 'Plusvalía y Dividendos explicados.', videoUrl: 'https://www.youtube.com/embed/pyh3lVWx0vg?rel=0&modestbranding=1', thumbnailUrl: '/imagen10.png' },
+      { id: 10, title: 'Lección 2: ¿Cómo se gana dinero realmente en Bolsa de Valores?', duration: '12:40', description: 'Plusvalía y Dividendos explicados.', videoUrl: 'https://www.youtube.com/embed/pyh3lVWx0vg?rel=0&modestbranding=1', thumbnailUrl: '/imagen10.png' },
       { id: 11, title: 'Lección 3: Tipos de empresas en el mercado', duration: '08:55', description: 'Clasificación por capitalización y sector.', videoUrl: 'https://www.youtube.com/embed/4lhW1cUk_Ls?rel=0&modestbranding=1', thumbnailUrl: '/imagen11.png' },
       { id: 12, title: 'Lección 4: Definiendo tu perfil de inversor', duration: '11:20', description: 'Test de riesgo y objetivos.', videoUrl: 'https://www.youtube.com/embed/SqfISbvdVrE?rel=0&modestbranding=1', thumbnailUrl: '/imagen12.png' },
       { id: 13, title: 'Lección 5: Errores comunes del principiante', duration: '14:30', description: 'Qué NO hacer en el mercado.', videoUrl: 'https://www.youtube.com/embed/fQm7-osiQM4?rel=0&modestbranding=1', thumbnailUrl: '/imagen13.png' },
