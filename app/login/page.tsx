@@ -51,7 +51,7 @@ export default function LoginPage() {
       {/* 3. Contenedor Principal del Login */}
       <div className="w-full max-w-md bg-slate-900/80 backdrop-blur-xl p-10 rounded-[2rem] border border-white/10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] relative z-10">
         
-        {/* 4. Cabecera con Logo Oficial Elart Inversiones */}
+        {/* 4. Cabecera con Logo Oficial Elart Academia */}
         <div className="flex flex-col items-center text-center mb-10">
           <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-cyan-700 shadow-[0_5px_20px_rgba(16,185,129,0.3)] mb-6 border-2 border-white/10 shrink-0">
             <svg className="w-8 h-8 text-cyan-100 drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@ export default function LoginPage() {
           <div className="flex flex-col leading-tight overflow-visible">
             <div className="flex items-end justify-center gap-1 transform -skew-x-12 origin-center overflow-visible">
               <span className="text-2xl font-black tracking-tighter text-white uppercase whitespace-nowrap">Elart</span>
-              <span className="text-2xl font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 whitespace-nowrap">Inversiones</span>
+              <span className="text-2xl font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 whitespace-nowrap">Academia</span>
             </div>
             <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-slate-500 transform -skew-x-12 origin-center mt-1">Portal Matriculados</span>
           </div>
@@ -142,7 +142,7 @@ export default function LoginPage() {
         {/* Enlace para soporte 100% funcional vía WhatsApp */}
         <div className="mt-8 text-center">
             <a 
-              href="https://wa.me/59164077551?text=Hola,%20tengo%20problemas%20para%20acceder%20a%20mi%20portal%20de%20alumno%20en%20Elart%20Inversiones." 
+              href="https://wa.me/59164077551?text=Hola,%20tengo%20problemas%20para%20acceder%20a%20mi%20portal%20de%20alumno%20en%20Elart%20Academia." 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 text-slate-500 text-xs font-bold hover:text-emerald-400 transition-colors uppercase tracking-widest group"

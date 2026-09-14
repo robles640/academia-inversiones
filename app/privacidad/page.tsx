@@ -18,7 +18,7 @@ export default function PrivacidadPage() {
             Volver al Inicio
           </Link>
 
-          {/* LOGO ELART INVERSIONES - VERSIÓN OFICIAL */}
+          {/* LOGO ELART ACADEMIA - VERSIÓN OFICIAL */}
           <Link href="/" className="flex items-center group cursor-pointer transition-all duration-300 shrink-0 overflow-visible">
             {/* Isotipo: El Templo del Capital */}
             <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-cyan-700 shadow-[0_5px_15px_rgba(0,0,0,0.3)] group-hover:shadow-emerald-500/50 transition-all duration-500 mr-3 border border-white/10 relative overflow-hidden shrink-0">
@@ -38,7 +38,7 @@ export default function PrivacidadPage() {
                   Elart
                 </span>
                 <span className="text-lg font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 group-hover:from-emerald-300 group-hover:to-cyan-300 transition-colors whitespace-nowrap">
-                  Inversiones
+                  Academia
                 </span>
               </div>
               <span className="text-[8px] uppercase tracking-[0.4em] font-bold text-slate-500 transform -skew-x-12 origin-left whitespace-nowrap">
@@ -60,7 +60,7 @@ export default function PrivacidadPage() {
           <h1 className="text-4xl md:text-6xl font-black text-white italic uppercase tracking-tighter mb-4">
             Política de <span className="text-cyan-500">Privacidad</span>
           </h1>
-          <p className="text-slate-500 text-sm font-medium">Vigente para la Academia Elart Inversiones • 2026</p>
+          <p className="text-slate-500 text-sm font-medium">Vigente para la Academia Elart Academia • 2026</p>
         </header>
 
         <section className="space-y-12 text-lg leading-relaxed font-medium">
@@ -70,7 +70,7 @@ export default function PrivacidadPage() {
             <div>
               <h2 className="text-2xl font-black text-white uppercase italic mb-4">1. Recolección de Información</h2>
               <p>
-                En <strong>ELART INVERSIONES</strong>, solo recolectamos los datos estrictamente necesarios para tu formación: nombre, correo electrónico y registros de progreso en el curso. No solicitamos ni almacenamos datos de tus cuentas bancarias o brokers externos.
+                En <strong>ELART ACADEMIA</strong>, solo recolectamos los datos estrictamente necesarios para tu formación: nombre, correo electrónico y registros de progreso en el curso. No solicitamos ni almacenamos datos de tus cuentas bancarias o brokers externos.
               </p>
             </div>
           </div>

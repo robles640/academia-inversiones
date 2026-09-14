@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "¿Recibiré actualizaciones sobre nuevas estrategias?",
-    answer: "El mundo financiero evoluciona. Como alumno de ELART INVERSIONES, tendrás acceso a las actualizaciones del programa para que tu operativa nunca quede obsoleta frente a los cambios de la economía global."
+    answer: "El mundo financiero evoluciona. Como alumno de ELART ACADEMIA, tendrás acceso a las actualizaciones del programa para que tu operativa nunca quede obsoleta frente a los cambios de la economía global."
   }
 ];
 
@@ -61,7 +61,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-slate-950/70 border-b border-slate-800/50">
         <div className="flex items-center justify-between p-4 max-w-7xl mx-auto">
           
-          {/* LOGO INSTITUCIONAL ELARTINVERSIONES */}
+          {/* LOGO INSTITUCIONAL ELARTACADEMIA */}
           <Link href="/" className="flex items-center group cursor-pointer transition-all duration-300 shrink-0 overflow-visible">
             <div className="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-500 to-cyan-700 shadow-[0_5px_20px_rgba(16,185,129,0.3)] group-hover:shadow-emerald-500/50 transition-all duration-500 mr-3 border-2 border-white/10 relative overflow-hidden shrink-0">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
@@ -75,7 +75,7 @@ export default function Home() {
             <div className="flex flex-col leading-tight overflow-visible pr-6">
               <div className="flex items-end gap-1 transform -skew-x-12 origin-left overflow-visible">
                 <span className="text-xl font-black tracking-tighter text-white uppercase whitespace-nowrap">Elart</span>
-                <span className="text-xl font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 group-hover:from-emerald-300 group-hover:to-cyan-300 transition-colors whitespace-nowrap">Inversiones</span>
+                <span className="text-xl font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 group-hover:from-emerald-300 group-hover:to-cyan-300 transition-colors whitespace-nowrap">Academia</span>
               </div>
               <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-slate-500 group-hover:text-emerald-400 transition-colors transform -skew-x-12 origin-left">Academia de Finanzas</span>
             </div>
@@ -99,7 +99,7 @@ export default function Home() {
             <span className="relative flex items-center gap-2">
               <Lock className="w-3.5 h-3.5 text-emerald-400 group-hover:scale-110 group-hover:text-cyan-400 transition-all" />
               
-              {/* 🟢 NUEVO TEXTO GRADIENTE TIPO "INVERSIONES" */}
+              {/* 🟢 NUEVO TEXTO GRADIENTE TIPO "ACADEMIA" */}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 drop-shadow-[0_2px_8px_rgba(16,185,129,0.3)] whitespace-nowrap">
                 Iniciar Sesión
               </span>
@@ -302,7 +302,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col leading-none overflow-visible">
                 <span className="text-xl font-black italic text-white uppercase tracking-tighter transform -skew-x-12 origin-left whitespace-nowrap">
-                  ELART <span className="text-emerald-500">INVERSIONES</span>
+                  ELART <span className="text-emerald-500">ACADEMIA</span>
                 </span>
               </div>
             </div>
@@ -361,7 +361,7 @@ export default function Home() {
         {/* Copyright y Links Legales con Funcionalidad */}
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-xs text-slate-500 order-last md:order-first italic">
-            © 2026 ELART INVERSIONES. Todos los derechos reservados.
+            © 2026 ELART ACADEMIA. Todos los derechos reservados.
           </p>
           <div className="flex gap-8 text-xs font-bold uppercase tracking-widest">
             <Link href="/terminos" className="text-slate-600 hover:text-emerald-400 transition-colors">Términos y Condiciones</Link>

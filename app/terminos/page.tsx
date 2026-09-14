@@ -18,7 +18,7 @@ export default function TerminosPage() {
             Volver al Inicio
           </Link>
 
-          {/* LOGO ELART INVERSIONES - VERSIÓN OFICIAL */}
+          {/* LOGO ELART ACADEMIA - VERSIÓN OFICIAL */}
           <Link href="/" className="flex items-center group cursor-pointer transition-all duration-300 shrink-0 overflow-visible">
             {/* Isotipo: El Templo del Capital */}
             <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-cyan-700 shadow-[0_5px_15px_rgba(0,0,0,0.3)] group-hover:shadow-emerald-500/50 transition-all duration-500 mr-3 border border-white/10 relative overflow-hidden shrink-0">
@@ -38,7 +38,7 @@ export default function TerminosPage() {
                   Elart
                 </span>
                 <span className="text-lg font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 group-hover:from-emerald-300 group-hover:to-cyan-300 transition-colors whitespace-nowrap">
-                  Inversiones
+                  Academia
                 </span>
               </div>
               <span className="text-[8px] uppercase tracking-[0.4em] font-bold text-slate-500 transform -skew-x-12 origin-left whitespace-nowrap">
@@ -70,7 +70,7 @@ export default function TerminosPage() {
             <div>
               <h2 className="text-2xl font-black text-white uppercase italic mb-4">1. Aceptación del Servicio</h2>
               <p>
-                Al acceder y utilizar la plataforma de <strong>ELART INVERSIONES</strong>, el usuario acepta de manera íntegra los presentes términos. Este servicio está diseñado exclusivamente para fines educativos y de formación financiera.
+                Al acceder y utilizar la plataforma de <strong>ELART ACADEMIA</strong>, el usuario acepta de manera íntegra los presentes términos. Este servicio está diseñado exclusivamente para fines educativos y de formación financiera.
               </p>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function TerminosPage() {
             <div>
               <h2 className="text-2xl font-black text-white uppercase italic mb-4">2. Descargo de Responsabilidad (Risk Warning)</h2>
               <p className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 italic text-slate-400">
-                "Las inversiones en mercados financieros conllevan riesgos. ELART INVERSIONES no es una entidad de asesoría financiera ni de gestión de capital. Todo el contenido es educativo y los resultados pasados no garantizan rendimientos futuros."
+                "Las inversiones en mercados financieros conllevan riesgos. ELART ACADEMIA no es una entidad de asesoría financiera ni de gestión de capital. Todo el contenido es educativo y los resultados pasados no garantizan rendimientos futuros."
               </p>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function TerminosPage() {
             <div>
               <h2 className="text-2xl font-black text-white uppercase italic mb-4">4. Uso de la Cuenta</h2>
               <p>
-                El acceso es personal e intransferible. El sistema de monitoreo de ELART INVERSIONES detecta accesos simultáneos desde distintas ubicaciones. El uso compartido de una cuenta resultará en la suspensión inmediata del servicio sin derecho a reembolso.
+                El acceso es personal e intransferible. El sistema de monitoreo de ELART ACADEMIA detecta accesos simultáneos desde distintas ubicaciones. El uso compartido de una cuenta resultará en la suspensión inmediata del servicio sin derecho a reembolso.
               </p>
             </div>
           </div>

@@ -281,7 +281,7 @@ export default function DashboardPage() {
       {/* NAVBAR */}
       <nav className="w-full bg-slate-900 border-b border-slate-800 px-6 py-3 flex justify-between items-center sticky top-0 z-50 shadow-lg">
         
-        {/* Logo ElartInversiones */}
+        {/* Logo ElartAcademia */}
         <Link href="/" className="flex items-center group cursor-pointer transition-all duration-300 hover:opacity-95 active:scale-95 shrink-0 overflow-visible">
           <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-cyan-700 shadow-[0_5px_25px_rgba(0,0,0,0.5)] group-hover:shadow-emerald-500/50 transition-all duration-500 mr-3 border-2 border-white/10 relative overflow-hidden shrink-0">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-100/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
@@ -295,7 +295,7 @@ export default function DashboardPage() {
           <div className="flex flex-col leading-tight overflow-visible pr-8">
             <div className="flex items-end gap-1.5 transform -skew-x-12 origin-left overflow-visible">
               <span className="text-2xl font-black tracking-tighter text-white uppercase whitespace-nowrap">Elart</span>
-              <span className="text-2xl font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 group-hover:from-emerald-300 group-hover:to-cyan-300 transition-colors duration-300 whitespace-nowrap">Inversiones</span>
+              <span className="text-2xl font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 group-hover:from-emerald-300 group-hover:to-cyan-300 transition-colors duration-300 whitespace-nowrap">Academia</span>
             </div>
             <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-slate-500 group-hover:text-emerald-400 transition-colors duration-300 whitespace-nowrap transform -skew-x-12 origin-left">Academia de Finanzas</span>
           </div>
@@ -347,7 +347,7 @@ export default function DashboardPage() {
 
             {/* 🟢 TARJETA DE SOPORTE WHATSAPP (Versión Slim) */}
             <a 
-              href="https://wa.me/59164077551?text=Hola,%20Necesito%20Soporte." 
+              href="https://wa.me/59174173222?text=Hola,%20Necesito%20Soporte." 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-between w-full bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/30 rounded-lg py-2 px-3 transition-all duration-300 group cursor-pointer shadow-sm hover:shadow-[0_5px_15px_-5px_rgba(37,211,102,0.3)]"
@@ -365,7 +365,7 @@ export default function DashboardPage() {
                     Soporte
                   </span>
                   <span className="text-xs font-mono font-medium text-slate-300 group-hover:text-white transition-colors">
-                    +591 64077551
+                    +591 74173222
                   </span>
                 </div>
               </div>
