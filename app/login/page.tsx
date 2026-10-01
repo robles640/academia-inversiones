@@ -67,7 +67,7 @@ export default function LoginPage() {
               <span className="text-2xl font-black tracking-tighter text-white uppercase whitespace-nowrap">Elart</span>
               <span className="text-2xl font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 whitespace-nowrap">Academia</span>
             </div>
-            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-slate-500 transform -skew-x-12 origin-center mt-1">Portal Matriculados</span>
+            <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-slate-500 transform -skew-x-12 origin-center mt-1">Portal de Matriculados</span>
           </div>
         </div>
 
@@ -142,7 +142,7 @@ export default function LoginPage() {
         {/* Enlace para soporte 100% funcional vía WhatsApp */}
         <div className="mt-8 text-center">
             <a 
-              href="https://wa.me/59164077551?text=Hola,%20tengo%20problemas%20para%20acceder%20a%20mi%20portal%20de%20alumno%20en%20Elart%20Academia." 
+              href="https://wa.me/59174173222?text=Hola,%20tengo%20problemas%20para%20acceder%20a%20mi%20portal%20de%20alumno%20en%20Elart%20Academia." 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 text-slate-500 text-xs font-bold hover:text-emerald-400 transition-colors uppercase tracking-widest group"
