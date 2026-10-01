@@ -63,24 +63,29 @@
           <div className="flex items-center justify-between p-4 max-w-7xl mx-auto">
             
             {/* LOGO INSTITUCIONAL ELARTACADEMIA */}
-            <Link href="/" className="flex items-center group cursor-pointer transition-all duration-300 shrink-0 overflow-visible">
-              <div className="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-500 to-cyan-700 shadow-[0_5px_20px_rgba(16,185,129,0.3)] group-hover:shadow-emerald-500/50 transition-all duration-500 mr-3 border-2 border-white/10 relative overflow-hidden shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                <svg className="w-8 h-8 text-cyan-100 drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M2 6l10-5 10 5v1.5H2V6zM4 8.5h16v1H4v-1z" />
-                  <path d="M4.5 7.5h1v1h-1zM7 7.5h1v1H7zM9.5 7.5h1v1h-1zM12 7.5h1v1h-1zM14.5 7.5h1v1h-1zM17 7.5h1v1h-1zM19.5 7.5h1v1h-1z" />
-                  <path d="M4.5 10h1.5v8h-1.5v-8zM9 10h1.5v8h-1.5v-8zM13.5 10h1.5v8h-1.5v-8zM18 10h1.5v8h-1.5v-8z" />
-                  <path d="M2 18.5h20v1H2v-1zM1.5 20.5h21v1.5h-21v-1.5z" />
-                </svg>
+          <Link href="/" className="flex items-center group cursor-pointer transition-all duration-300 shrink-0 overflow-visible">
+            {/* Ajuste de tamaño del icono: w-9 h-9 en móvil, w-11 h-11 en PC */}
+            <div className="flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-emerald-500 to-cyan-700 shadow-[0_5px_20px_rgba(16,185,129,0.3)] group-hover:shadow-emerald-500/50 transition-all duration-500 mr-2 sm:mr-3 border-2 border-white/10 relative overflow-hidden shrink-0">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              {/* SVG ajustado */}
+              <svg className="w-5 h-5 sm:w-8 sm:h-8 text-cyan-100 drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M2 6l10-5 10 5v1.5H2V6zM4 8.5h16v1H4v-1z" />
+                <path d="M4.5 7.5h1v1h-1zM7 7.5h1v1H7zM9.5 7.5h1v1h-1zM12 7.5h1v1h-1zM14.5 7.5h1v1h-1zM17 7.5h1v1h-1zM19.5 7.5h1v1h-1z" />
+                <path d="M4.5 10h1.5v8h-1.5v-8zM9 10h1.5v8h-1.5v-8zM13.5 10h1.5v8h-1.5v-8zM18 10h1.5v8h-1.5v-8z" />
+                <path d="M2 18.5h20v1H2v-1zM1.5 20.5h21v1.5h-21v-1.5z" />
+              </svg>
+            </div>
+            {/* Se redujo el espaciado derecho en móvil (pr-2) */}
+            <div className="flex flex-col leading-tight overflow-visible pr-2 sm:pr-6">
+              <div className="flex items-end gap-1 transform -skew-x-12 origin-left overflow-visible">
+                {/* Texto: text-base en móvil, text-xl en PC */}
+                <span className="text-base sm:text-xl font-black tracking-tighter text-white uppercase whitespace-nowrap">Elart</span>
+                <span className="text-base sm:text-xl font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 group-hover:from-emerald-300 group-hover:to-cyan-300 transition-colors whitespace-nowrap">Academia</span>
               </div>
-              <div className="flex flex-col leading-tight overflow-visible pr-6">
-                <div className="flex items-end gap-1 transform -skew-x-12 origin-left overflow-visible">
-                  <span className="text-xl font-black tracking-tighter text-white uppercase whitespace-nowrap">Elart</span>
-                  <span className="text-xl font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 group-hover:from-emerald-300 group-hover:to-cyan-300 transition-colors whitespace-nowrap">Academia</span>
-                </div>
-                <span className="text-[9px] uppercase tracking-[0.4em] font-bold text-slate-500 group-hover:text-emerald-400 transition-colors transform -skew-x-12 origin-left">Academia de Finanzas</span>
-              </div>
-            </Link>
+              {/* Subtítulo ajustado para que no se desborde */}
+              <span className="text-[7px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.4em] font-bold text-slate-500 group-hover:text-emerald-400 transition-colors transform -skew-x-12 origin-left">Academia de Finanzas</span>
+            </div>
+          </Link>
 
             <div className="hidden md:flex gap-8 text-xs font-black uppercase tracking-widest text-slate-400">
               <a href="#metodo" className="hover:text-emerald-400 transition-colors">Método</a>
@@ -101,7 +106,7 @@
               
               {/* 🟢 NUEVO TEXTO GRADIENTE TIPO "ACADEMIA" */}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 drop-shadow-[0_2px_8px_rgba(16,185,129,0.3)] whitespace-nowrap">
-                Iniciar Sesión
+                Acceder
               </span>
             </span>
             
