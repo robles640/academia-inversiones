@@ -141,7 +141,7 @@
             
             {/* TU DESCRIPCIÓN EXACTA */}
             <p className="text-base md:text-lg text-slate-400 mb-14 max-w-3xl mx-auto leading-relaxed font-medium text-center">
-              Deja de ser un esclavo de la economía. Aprende la fórmula exacta para Invertir tu dinero en las empresas más grandes del mundo y proteger tu capital con fondos regulados y enriquecedores. Te enseñamos a operar en la Bolsa de Valores con estrategias probadas, blindando tu dinero de la inflación y tomando el control total de tu futuro financiero.
+              Aprende a invertir y conviértete en socio de las empresas más grandes y rentables del mundo como <strong className="text-emerald-400">Nvidia, Tesla, Microsoft y Apple</strong>. Te enseñamos desde cero a operar en la Bolsa de Valores de EE.UU. con estrategias probadas, blindando tu dinero de la inflación y tomando el control total de tu futuro financiero para que empieces a Generar Riqueza.
             </p>
             
             {/* Botones de Acción */}
