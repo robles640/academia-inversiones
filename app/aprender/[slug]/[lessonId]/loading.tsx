@@ -1,0 +1,1 @@
+export default function LoadingLesson(){return <div style={{maxWidth:950,margin:'80px auto',padding:30,color:'#142d40'}} aria-live="polite"><h2>Preparando tu clase…</h2><p>Verificando el acceso al contenido y cargando el temario.</p></div>}

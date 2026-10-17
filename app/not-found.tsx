@@ -1,0 +1,2 @@
+import Link from 'next/link';import {SiteHeader} from '@/components/site-header';import {SiteFooter} from '@/components/site-footer';
+export default function NotFound(){return <><SiteHeader/><main className="auth-shell"><div className="auth-card" style={{textAlign:'center'}}><span className="small-kicker">ERROR 404</span><h1>No encontramos esta página</h1><p>La dirección que buscas no existe o cambió.</p><Link className="btn btn-dark" href="/">Volver al inicio →</Link></div></main><SiteFooter/></>}

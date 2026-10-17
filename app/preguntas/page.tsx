@@ -1,0 +1,2 @@
+import {SiteHeader} from '@/components/site-header';import {SiteFooter} from '@/components/site-footer';import {FAQ} from '@/components/faq';
+export default function Questions(){return <><SiteHeader/><main><section className="subhero"><div className="container"><h1>Preguntas <em>frecuentes.</em></h1><p>Conoce cómo funciona nuestra academia digital.</p></div></section><section className="section"><div className="container" style={{maxWidth:850}}><FAQ/></div></section></main><SiteFooter/></>}
