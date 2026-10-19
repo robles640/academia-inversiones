@@ -230,9 +230,8 @@ export default async function CourseDetail({
                 ))
               ) : (
                 <p>
-                  El temario se mostrará aquí cuando
-                  conectes la base de datos y ejecutes
-                  los archivos de instalación SQL.
+                  Estamos actualizando el programa académico de esta formación.
+                  Para conocer los contenidos disponibles, comunícate con nuestro equipo.
                 </p>
               )}
             </div>
