@@ -681,3 +681,72 @@
     transform: none;
   }
 }
+
+
+/* Formularios corporativos compartidos: registro, recuperación y nueva contraseña */
+.formHeading h1 {
+  margin: 15px 0 10px;
+  color: #0b243a;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 3vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+.passwordField { min-width: 0; }
+.passwordField :global(.password-input-wrap) { position: relative; display: flex; align-items: center; width: 100%; }
+.passwordField :global(.password-input-wrap input) {
+  width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  margin: 0;
+  padding: 13px 94px 13px 15px;
+  border-radius: 9px;
+  background: #fbfcfd;
+  border: 1px solid #dce4e9;
+  color: #11283d;
+  font-size: 14px;
+}
+.passwordField :global(.password-input-wrap input:focus) {
+  outline: none;
+  background: white;
+  border-color: #13818b;
+  box-shadow: 0 0 0 3px rgba(19, 129, 139, .11);
+}
+.passwordField :global(.password-visibility) {
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #38677b;
+  padding: 10px 7px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.passwordField :global(.password-rules) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 12px;
+  margin-top: 11px;
+  font-size: 11px;
+  color: #687d8a;
+}
+.passwordField :global(.password-rules .valid) { color: #087657; }
+.consent {
+  margin: 21px 0 0;
+  color: #788995;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+.consent a { color: #0b7782; font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+.form :global(input:focus-visible), .form :global(button:focus-visible),
+.googleSection :global(button:focus-visible) {
+  outline: 3px solid #a6d9df;
+  outline-offset: 3px;
+}
+@media (max-width: 420px) {
+  .formHeading h1 { font-size: 33px; }
+  .passwordField :global(.password-input-wrap input) { font-size: 16px; }
+}

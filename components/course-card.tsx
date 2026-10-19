@@ -44,11 +44,9 @@ export function CourseCard({
             {course.category}
         </div>
 
-        <span className="ea-course-status">
-            {course.status === 'published'
-            ? 'Inscripciones abiertas'
-            : 'Próximamente'}
-        </span>
+        {course.status === 'published' && (
+          <span className="ea-course-status">Inscripciones abiertas</span>
+        )}
         </div>
 
 

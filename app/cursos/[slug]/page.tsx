@@ -263,8 +263,7 @@ export default async function CourseDetail({
               </a>
             ) : (
               <div className="alert">
-                Próximamente. Este curso aún no dispone
-                de clases publicadas y no se puede comprar.
+                Las inscripciones para este programa todavía no están disponibles.
               </div>
             )}
 
