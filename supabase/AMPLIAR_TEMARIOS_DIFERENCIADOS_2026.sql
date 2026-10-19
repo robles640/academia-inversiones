@@ -97,6 +97,18 @@ BEGIN
   END LOOP;
 END $academia$;
 
+-- Mantener una secuencia pedagógica: el proyecto final queda después de los temas avanzados.
+-- Solo cambia el orden del módulo existente, nunca sus lecciones ni sus identificadores.
+UPDATE public.modules m
+SET position = (SELECT MAX(x.position) + 1 FROM public.modules x WHERE x.course_id=m.course_id)
+WHERE m.position=4
+  AND m.title ILIKE '%proyecto%'
+  AND m.course_id IN (
+    SELECT id FROM public.courses WHERE slug IN
+      ('ia-para-negocios','data-analytics-powerbi','marketing-digital-ads',
+       'desarrollo-web-fullstack','ingles-corporativo')
+  );
+
 -- Duración curricular: no presenta los temas como videos grabados.
 UPDATE public.courses c
 SET duration_label =
